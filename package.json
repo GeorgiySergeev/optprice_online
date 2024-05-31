@@ -1,11 +1,11 @@
 {
-  "name": "parcel-project-template",
+  "name": "optprice_online",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://GeorgiySergeev.github.io/JavaScript_Training",
+  "homepage": "https://GeorgiySergeev.github.io/optprice_online",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /JavaScript_Training/"
+    "build": "parcel build src/*.html --public-url /optprice_online/"
   },
   "repository": {
     "type": "git",
