@@ -1,14 +1,436 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk-UA">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <meta name="viewport" content="width=480" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>Чоловічі базові футболки від виробника</title>
+    <meta
+      name="description"
+      content="Доставляємо ваш товар протягом 1-3 днів. Оплачуєте при отриманні або за передоплатою по Україні"
+    />
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Якісні чоловічі футболки " />
+    <meta
+      property="og:description"
+      content=" Продаж якісних чоловічих футболок із 100% бавовни. Базові класичні кольори, всі розміри."
+    />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <!-- Fonts Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fonts  Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Fonts -->
+
+    <!-- Meta Pixel Code can be added here if needed -->
+
+    <!-- End Meta Pixel Code  -->
+
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="./sass/index.scss" />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+
+    <!-- JavaScript Module -->
     <script type="module" src="./index.js"></script>
+    <script async="" src="./js/tag.js"></script>
   </head>
+
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <main class="main_wrapper">
+      <!-- header  -->
+      <header class="offer_text">
+        <span> <i class="icon-truck"></i> ДОСТАВКА Новою Поштою 1-2 дні </span>
+        <span> <i class="icon-cc-visa"></i> ОПЛАТА ПРИ ОТРИМАННІ </span>
+      </header>
+      <!-- ? nav section -->
+      <section class="offer_section">
+        <ul class="top_menu">
+          <li>
+            <a
+              href="#catalog"
+              onclick="document.location.hash='catalog';return false;"
+              class="f1"
+              >Замовити зараз</a
+            >
+          </li>
+          <li>
+            <a href="#2" onclick="document.location.hash='2';return false;"
+              >Відгуки</a
+            >
+          </li>
+          <li>
+            <a href="#3" onclick="document.location.hash='3';return false;"
+              >Доставка</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <!-- ? Hero section -->
+
+      <section class="offer_section offer3">
+        <h1 class="main_title">Чоловічі базові футболки від виробника</h1>
+        <div class="info_block">
+          <!-- <div class="discount">
+            <b>Знижка -30%</b>
+          </div> -->
+          <img src="./images/hero_img.png" alt="t-shirt" />
+        </div>
+        <div class="price_block">
+          <div class="price_item old">
+            <div class="text">Звичайна ціна:</div>
+            <div class="value">390 грн</div>
+          </div>
+          <div class="price_item new">
+            <div class="text">Ціна зі знижкою:</div>
+            <div class="value">250 грн</div>
+          </div>
+        </div>
+        <div class="benefits_block clearfix">
+          <div class="benefit_item">
+            <img src="images/t-shirt-1.jpg" alt="t-shirt" title="футболка" />
+            <p>Від українського виробника</p>
+          </div>
+          <div class="benefit_item">
+            <img src="images/t-shirt-2.jpg" alt="t-shirt" title="футболка" />
+            <p>2 базових кольори</p>
+          </div>
+          <div class="benefit_item">
+            <img src="images/t-shirt-3.jpg" alt="t-shirt" title="футболка" />
+            <p>Тканина люкс якості</p>
+          </div>
+        </div>
+
+        <!-- timer 1 -->
+
+        <div class="timer_block clearfix" style="margin: 0">
+          <p>До закінчення акції залишилося:</p>
+          <div class="timer clearfix">
+            <div class="timer_item">
+              <div class="count hours"></div>
+              <div class="text">Годин</div>
+            </div>
+            <div class="timer_item">
+              <div class="count minutes"></div>
+              <div class="text">Хвилин</div>
+            </div>
+            <div class="timer_item">
+              <div class="count seconds"></div>
+              <div class="text">Секунд</div>
+            </div>
+          </div>
+        </div>
+        <div class="products_count">
+          Акційна ціна діє при купівлі від 3 одиниць
+          <!-- <span>12 шт.</span> -->
+          <!-- onclick="document.location.hash='catalog';return false;" -->
+        </div>
+
+        <a href="#order_form" class="button">ЗАМОВИТИ ЗІ ЗНИЖКОЮ</a>
+      </section>
+
+      <!-- ? description section -->
+
+      <section class="description_section">
+        <h2 class="title">
+          <span>ОПИС</span>
+        </h2>
+        <p>
+          Наші футболки з м'якої, дихаючої бавовни ідеально підходять для
+          будь-якої події. 🥰<br /><br />
+          Чорний для елегантності, білий для свіжості – вибір за вами. 😍<br /><br />
+          Незмінна якість і класичний дизайн. Ваша нова улюблена футболка чекає
+          на вас!👌
+          <br /><br />
+        </p>
+        <!-- ? slider -->
+        <!-- <div class="slider-dress">
+          <img src="images/slider_2.jpg" alt="" />
+          <img src="images/slider_3.jpg" alt="" />
+          <img src="images/slider_4.jpg" alt="" />
+        </div> -->
+
+        <!-- ! SLIDER SPLIDE -->
+        <section
+          id="slider"
+          class="splide"
+          aria-label="Splide Basic HTML Example"
+        >
+          <div class="splide__track slider-dress">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="images/slider_2.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/slider_3.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/slider_4.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- !SLIDER SPLIDE -->
+
+        <ul class="characteristics__list">
+          <li><b>Тканина: </b> 100% бавовна;</li>
+          <li><b>Колір:</b>чорний, білий</li>
+          <li>
+            <b>Розміри:</b> M(46-48), L(48-50), XL(50-52), XXL(52-54),
+            XXXL(54-56)
+          </li>
+          <br />
+        </ul>
+        <div class="clearfix">
+          <ul class="myprice">
+            <li>
+              <p>Звичайна ціна:</p>
+              <span>390 грн</span>
+            </li>
+            <li>
+              <p>Ціна сьогодні:</p>
+              <span>250 грн</span>
+            </li>
+          </ul>
+          <a href="#order_form" class="button">Замовити зараз</a>
+        </div>
+      </section>
+
+      <!-- ? review section -->
+
+      <section class="reviews3_section" id="2">
+        <h2 class="title">Відгуки <span>покупців</span></h2>
+        <div class="reviews_list">
+          <div class="review_item">
+            <div class="author_block clearfix">
+              <img src="images/avatar_1.png" alt="" />
+              <div class="author_info">
+                <div class="name">Павел</div>
+                <div class="text">23 роки</div>
+              </div>
+              <div class="info">
+                <div class="rating"></div>
+                <div class="date dattt">29.05.2024</div>
+              </div>
+            </div>
+            <p>
+              Дуже гарна якість. Купував 3 білі футболки, потім ще 3 чорні.
+              Дякую, ви супер!
+            </p>
+          </div>
+          <div class="review_item">
+            <div class="author_block clearfix">
+              <img src="images/avatar_2.png" alt="" />
+              <div class="author_info">
+                <div class="name">Станіслав</div>
+                <div class="text">34 роки</div>
+              </div>
+              <div class="info">
+                <div class="rating"></div>
+                <div class="date dattt">25.05.2024</div>
+              </div>
+            </div>
+            <p>
+              Пишаюсь що маемо такого виробника в нашій країні. Дуже якісні
+              речі, рекомендую. Замовляв на подарунок. Навіть вклали листівку ))
+              Дуже дякую. 😍
+            </p>
+          </div>
+          <div class="review_item">
+            <div class="author_block clearfix">
+              <img src="images/avatar_3.png" alt="" />
+              <div class="author_info">
+                <div class="name">Владислав</div>
+                <div class="text">32 роки</div>
+              </div>
+              <div class="info">
+                <div class="rating"></div>
+                <div class="date dattt">20.05.2024</div>
+              </div>
+            </div>
+            <p>
+              В мене вся родина вже в одязі від цього виробника )) Нещодавно
+              дізнався що ви 5% від продажів віддаєте на благодійність. Респект.
+              Бажаю тільки розвитку. Ще буду замовляти однозначно, одяг дуже
+              гарної якості. :)
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- order steps 1 -->
+      <section class="order-steps">
+        <div class="tlt">
+          <h2 class="title">
+            <span>Як залишити</span>
+            <br />
+            заявку?
+          </h2>
+        </div>
+        <div class="order_steps1">
+          <div class="step_item">
+            <div class="step_wrapper">
+              <img src="images/order_steps__step1_icon.png" alt="" />
+              <h4>Заявка</h4>
+              <p>Заповніть форму на сайті</p>
+            </div>
+          </div>
+          <div class="step_item">
+            <div class="step_wrapper">
+              <img src="images/order_steps__step2_icon.png" alt="" />
+              <h4>Дзвінок</h4>
+              <p>Наш менеджер зателефонує для уточнення деталей</p>
+            </div>
+          </div>
+          <div class="step_item" id="3">
+            <div class="step_wrapper">
+              <img src="images/order_steps__step3_icon.png" alt="" />
+              <h4>Відправка</h4>
+              <p>Доставляємо ваш товар протягом <br />1-2 днів</p>
+            </div>
+          </div>
+          <div class="step_item">
+            <div class="step_wrapper">
+              <img src="images/order_steps__step4_icon.png" alt="" />
+              <h4>Отримання</h4>
+              <p>Оплачуєте при отриманні або за передоплатою</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ? size -->
+
+      <section class="cat" id="cat">
+        <div class="tlt">
+          <h2 class="title"><span>Розмірна</span> сітка</h2>
+        </div>
+        <div class="catitem">
+          <img src="images/size.png" alt="size" />
+        </div>
+      </section>
+
+      <section class="offer_section offer3 order" id="catalog">
+        <h2 class="main_title">Чоловічі базові футболки від виробника</h2>
+        <div class="info_block">
+          <!-- <div class="discount">
+            <b>Знижка -30%</b>
+          </div> -->
+          <img src="./images/hero_img.png" alt="" />
+        </div>
+        <div class="price_block" id="order_form">
+          <div class="price_item old">
+            <div class="text">Звичайна ціна:</div>
+            <div class="value">390 грн</div>
+          </div>
+          <div class="price_item new">
+            <div class="text">Ціна зі знижкою:</div>
+            <div class="value">250 грн</div>
+          </div>
+        </div>
+        <!-- timer 2 -->
+        <div class="timer_block clearfix">
+          <p>До закінчення акції залишилося:</p>
+          <div class="timer clearfix">
+            <div class="timer_item">
+              <div class="count hours"></div>
+              <div class="text">Годин</div>
+            </div>
+            <div class="timer_item">
+              <div class="count minutes"></div>
+              <div class="text">Хвилин</div>
+            </div>
+            <div class="timer_item">
+              <div class="count seconds"></div>
+              <div class="text">Секунд</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ! order form telegram  -->
+
+        <form class="telegram-form">
+          <p class="order-nitification">
+            Залишайте заявку, наші менеджери відразу зателефонують Вам для
+            уточнення інформації по розмірам та кольорам.
+          </p>
+
+          <select class="select" name="quantity" required="">
+            <option selected="" disabled="">Оберіть кількість</option>
+            <option value="1">1 шт. - 299 грн.</option>
+            <option value="2">2 шт - 558 грн. (ціна за одну 279 грн.)</option>
+            <option value="3">3 шт. - 750 грн. (ціна за одну 250 грн.)</option>
+          </select>
+          <input
+            class="field"
+            type="text"
+            name="name"
+            autocomlete="name"
+            minlength="5"
+            maxlength="50"
+            placeholder="Введіть Ваше ПІБ"
+            required=""
+          />
+          <input
+            class="field"
+            type="tel"
+            autocomlete="tel"
+            name="phone"
+            minlength="10"
+            maxlength="17"
+            id="phone"
+            placeholder="+38(___)___-__-__"
+            required=""
+          />
+
+          <!-- <input class="field" type="text" name="np" placeholder="Населений пункт та № відділення НП" required=""> -->
+          <input type="hidden" value="1" name="sekunda" id="sekunda" />
+          <div id="notification" style="display: none">
+            <p style="text-align: center">
+              Зачекайте, заявка відправляється! <br />
+              <img src="images/loading_image.gif" style="width: 50px" />
+            </p>
+          </div>
+          <button class="button" id="submit_button">Замовити зараз</button>
+        </form>
+        <br />
+      </section>
+
+      <!--? footer -->
+
+      <footer class="footer_section">
+        <p>Одеса, Україна</p>
+        <br />
+        <a href="politics.html">Політика конфіденційності</a>
+        <br />
+        <a href="agreement.html">Угода користувача</a>
+      </footer>
+    </main>
   </body>
+  <script src="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+  "></script>
+  <script src="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js
+  "></script>
 </html>
